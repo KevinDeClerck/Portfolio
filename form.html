@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="description" content="Portfolio van Kevin De Clerck" >
+        <meta name="keywords" content="Portfolio">
+        <title>Portfolio - Kevin De Clerck</title>
+        <link rel="stylesheet" type="text/css" href="stijl.css" />
+
+        <div id="kader"> <a href="index.html" class="kader" class="hoofd">&nbsp; Home &nbsp;</a>
+            <a href="hobby.html" class="kader" class="hoofd">&nbsp; Hobbys &nbsp;</a>
+            <a href="opleidingen.html" class="kader" class="hoofd">&nbsp; Opleidingen &nbsp;</a>
+            <a href="form.html" class="kader" class="hoofd">&nbsp; Form &nbsp;</a>
+
+        </div>
+
+
+    </head>
+
+    <body>
+        <h1>Form</h1>
+
+        <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+            <p>
+                <label>Naam 
+                    <input type="email" name="user_email" required>
+                </label> 
+
+                <label>Wachtwoord
+                    <input type="password" name="user_pwd" required>
+                </label>
+
+                <button>Log In</button>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </p>
+
+            <fieldset>
+                <legend>Favoriete platform?</legend>
+                <p><label> <input type="radio" name="platform" required value="PS4"> PS4 </label></p>
+                <p><label> <input type="radio" name="platform" required value="XBox"> X Box </label></p>
+                <p><label> <input type="radio" name="platform" required value="PC"> PC </label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favoriete sport?</legend>
+                <p><label> <input type="checkbox" name="extras" value="Volleybal"> Volleybal </label></p>
+                <p><label> <input type="checkbox" name="extras" value="Basket"> Basket </label></p>
+                <p><label> <input type="checkbox" name="extras" value="Voetbal"> Voetbal </label></p>
+            </fieldset>
+
+            <p>
+                <label>Geboorte datum
+                    <input type="datetime-local" name="pickup_time" required>
+                </label>
+            </p>
+
+            <p>
+                <label>Nationaliteit
+                    <select id="pickup_place" name="pickup_place">
+                        <option value="" selected="selected">Kies nationaliteit</option>
+                        <option value="Belg" >Belg</option>
+                        <option value="Frans" >Frans</option>
+                        <option value="Nederlands" >Nederlands</option>
+                    </select>
+                </label> 
+            </p>
+
+
+            <p>
+                <label>Opmerkingen
+                    <textarea name="opmerkingen" maxlength="500"></textarea>
+                </label>
+            </p>
+
+            <p><button>Doorsturen</button></p>
+
+        </form>
+
+
+        <h1>Video's</h1>
+        <iframe  id="video" width="950" height="700" src="https://www.youtube.com/embed/UKpdmFbcRIs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+    
+        <h1>Maps</h1>
+        
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0359164957254!2d4.354321515475035!3d50.84901916644687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3821c965813%3A0x2835bda3e91c6b38!2sHogeschool-Universiteit+Brussel!5e0!3m2!1sen!2sbe!4v1539852063314" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    </body>
+</html>

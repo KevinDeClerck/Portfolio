@@ -1,0 +1,64 @@
+body { 
+      background-color: black;
+}
+
+
+h1 {
+	text-align: center;
+	border-style: double ;
+	border-color: #F0931C;
+	font-style: italic;
+	font-size: 40px;
+    color: white;
+}
+
+
+h2 {
+	margin-left: 150px;
+	color: #A1A19B;
+}
+
+p {
+	margin-right: 150px;
+	margin-left: 150px;
+    color: white;
+}
+
+.kader{
+	
+	border-style: outset; 
+	border-color: #F0931C;
+	border-width: 6px;
+	color: #F0931C;
+	background-color:black;
+}   
+
+#kader {
+	text-align: center;
+}
+
+
+#foto {
+    margin-left: 10%;
+}
+
+#info {
+    padding-left: 180px;
+    color: white;
+}
+
+legend {
+    color: white;
+}
+
+#video {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
+
+#map {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
