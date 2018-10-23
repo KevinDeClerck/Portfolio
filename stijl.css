@@ -1,5 +1,5 @@
 body { 
-    background-image: url(fotos/achtergrond.jpg);
+    background-image: url(fotos/testbg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-    
+
     color: white;
 }
 
@@ -39,7 +39,7 @@ p {
 #kader {
     text-align: center;
     overflow: hidden;
-    background-color: #582b96;
+    background-color: #316ac6;
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,9 +61,11 @@ legend {
 }
 
 #map {
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 95%;
+    height: 95%;
+
 }
 
 
@@ -80,18 +82,18 @@ legend {
 /* Change color on hover */
 #kader a:hover {
     background-color: #ddd;
-    color: #582b96;
+    color: #316ac6;
 }
 
 .column {
     float: left;
     width: 33.33%;
     padding: 5px; 
-    
+
 }
 
 .row {
-    background: rgb(255, 255, 255,0.2);
+    background: rgb(49, 106, 198,0.3);
     border-radius: 50px;
     text-align: center;
     margin-left: 4%;
@@ -111,14 +113,14 @@ legend {
     padding-bottom: 2%;
     list-style: none;
     display: flex;
-    background: rgb(255, 255, 255,0.2);
+    background: rgb(49, 106, 198,0.3);
     border-radius: 50px;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .flex-item {
-    
+
     border-radius: 50px;
     width: 440px;
     height: 440px;
@@ -129,6 +131,7 @@ legend {
     margin-right: 5%;
     text-align: center;
     overflow: hidden;
+    transition:transform 1.5s, width 1.5s linear, height 1.5s linear;
 }
 
 .flex-container2 {
@@ -136,7 +139,7 @@ legend {
     padding-bottom: 2%;
     list-style: none;
     display: flex;
-    background: rgb(255, 255, 255,0.2);
+    background: rgb(49, 106, 198,0.3);
     border-radius: 50px;
     margin-left: 5%;
     margin-right: 5%;
@@ -147,6 +150,16 @@ legend {
 .flex-item2 {
     width: 550px;
     height: 550px;
+    margin-top: 10px;   
+    margin-left: 4%;
+    margin-right: 4%;
+    overflow: hidden;
+    padding-left: 1%;
+}
+
+.flex-item3 {
+    width: 80%;
+    height: auto;
     margin-top: 10px;   
     margin-left: 4%;
     margin-right: 4%;
@@ -164,9 +177,12 @@ legend {
 #didden:hover,#votes:hover,#spel:hover {
     background-image: none;
     color: white;
-    cursor: pointer;
-    background: rgb(255, 255, 255,0.2);
+    cursor: progress;
+    background: rgb(49, 106, 198,0.3);
     border-style: dashed;
+    transform:rotateY(360deg);
+    width: 500px;
+    height: 500px;
 }
 
 .space{
@@ -174,6 +190,10 @@ legend {
 }
 .direction{
     flex-direction: row;
+}
+
+.direction2{
+    flex-direction: column;
 }
 
 .wrap {
@@ -194,6 +214,77 @@ legend {
     background-image: url(fotos/2kno6g.gif);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.hooby {
+    color: white;
+    font-style: italic;
+}
+
+.myForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 3px;
+    background: rgb(49, 106, 198,0.3);
+    border-radius: 50px;
+    padding-top: 10px;
+
+}
+.rij {
+    display: flex;
+    justify-content: center;
+
+}
+.colom1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4%;
+
+}
+.colom2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 4%;  
+}
+.velden {
+    display: flex;
+}
+.velden > label {
+    margin-right: 1em; 
+    padding: .5em 0;
+    overflow: hidden;
+    width: 20%;
+}
+.myForm input,
+.myForm select {
+    flex: 6; 
+    padding: .5em;
+    margin-bottom: 1em;
+}
+.myForm button {
+    padding: 1em; 
+    background: rgb(49, 106, 198,0.3);
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+}
+.myForm fieldset {
+    border: 0; 
+}
+.platform > label,
+.genre > label {
+    display: block;
+}
+
+form {
+    color: white;
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */

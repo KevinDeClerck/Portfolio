@@ -17,78 +17,99 @@
             </nav>
             <h1>Contact</h1>
         </header>
-
-
         <article>
             <section>
-                <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
-                    <p>
-                        <label>Naam 
-                            <input type="email" name="user_email" required>
-                        </label> 
+                <form class="myForm">
+                    <div class="rij">
+                        <div class="colom1">
+                            <div class="velden">
+                                <label for="voornaam">Voornaam </label>
+                                <input id="voor" placeholder="Voornaam">
+                            </div>
+                            <div class="velden">
+                                <label for="familie">Familienaam </label>
+                                <input id="achter" placeholder="Familienaam">
+                            </div>
+                            <div class="velden">
+                                <label for="gsm_nummer">GSM</label>
+                                <input type="tel" id="gsm" placeholder="Gsm nummer">
+                            </div>
+                            <div class="velden">
+                                <label for="email_addres">Email </label>
+                                <input type="email" id="email_addres" placeholder="E-mail">
+                            </div>
+                            <div class="velden">
+                                <label for="geboortedatum">Geboorte datum</label>
+                                <input type="datetime-local" id="geboorte">
+                            </div>
+                            <div class="velden">
+                                <label for="nationaliteit">Nationaliteit</label>
+                                <select id="nationaliteit">
+                                    <option value="" selected="selected">Kies je nationaliteit </option>
+                                    <option value="belg" >Belg</option>
+                                    <option value="frans" >Frans</option>
+                                    <option value="nederlands" >Nederlands</option>
+                                </select>
+                            </div>
+                            <div class="velden">
+                                <label for="geslacht">Geslacht</label>
+                                <select id="geslacht">
+                                    <option value="" selected="selected">Geslacht</option>
+                                    <option value="man" >Man</option>
+                                    <option value="vrouw" >Vrouw</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="colom2">
+                            <fieldset class="platform">
+                                <legend>Favoriete platform</legend>
+                                <label> <input type="radio"  name="platform" id="pc" value="PC"> PC </label>
+                                <label> <input type="radio" name="platform" id="ps4" value="PS4"> PS4 </label>
+                                <label> <input type="radio"  name="platform" id="xbox" value="X-box"> X Box </label>
+                            </fieldset>
 
-                        <label>Wachtwoord
-                            <input type="password" name="user_pwd" required>
-                        </label>
+                            <fieldset class="genre">
+                                <legend>Favoriete genres</legend>
+                                <label> <input type="checkbox" id="shooter" name="genre" value="Shooter"> Shooter </label>
+                                <label> <input type="checkbox" id="racing" name="genre" value="Racing"> Racing </label>
+                                <label> <input type="checkbox" id="sport" name="genre" value="Sport"> Sport </label>
+                                <label> <input type="checkbox" id="mmorpg" name="mmorpg" value="Sport"> MMORPG </label>
+                                <label> <input type="checkbox" id="strategy" name="mmorpg" value="Strategy"> Strategy </label>
+                                <label> <input type="checkbox" id="moba" name="mmorpg" value="MOBA"> MOBA </label>
+                            </fieldset>
+                        </div>
+                        <div class="colom2">
+                            <fieldset class="platform">
+                                <legend>Aantal uren per dag</legend>
+                                <label> <input type="radio"  name="uur" id="1" value="1"> 0-1</label>
+                                <label> <input type="radio" name="uur" id="2" value="2"> 1-2</label>
+                                <label> <input type="radio"  name="uur" id="3" value="X-3"> 2+ </label>
+                            </fieldset>
 
-                        <button>Log In</button>
-                    </p>
+                            <fieldset class="genre">
+                                <legend>Welke dagen</legend>
+                                <label> <input type="checkbox" id="shooter" name="genre" value="Shooter"> Maandag </label>
+                                <label> <input type="checkbox" id="racing" name="genre" value="Racing"> Dinsdag </label>
+                                <label> <input type="checkbox" id="sport" name="genre" value="Sport"> Woensdag </label>
+                                <label> <input type="checkbox" id="mmorpg" name="mmorpg" value="Sport"> Donderdag </label>
+                                <label> <input type="checkbox" id="mmorpg" name="mmorpg" value="Sport"> Vrijdag </label>
+                                <label> <input type="checkbox" id="mmorpg" name="mmorpg" value="Sport"> Weekend </label>
+                            </fieldset>
+                        </div>
 
-                    <p>
-                        <label>
-                            <input type="checkbox"> Remember me
-                        </label>
-                    </p>
-                    <fieldset>
-                        <legend>Favoriete platform?</legend>
-                        <p><label> <input type="radio" name="platform" required value="PS4"> PS4 </label></p>
-                        <p><label> <input type="radio" name="platform" required value="XBox"> X Box </label></p>
-                        <p><label> <input type="radio" name="platform" required value="PC"> PC </label></p>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Favoriete sport?</legend>
-                        <p><label> <input type="checkbox" name="extras" value="Volleybal"> Volleybal </label></p>
-                        <p><label> <input type="checkbox" name="extras" value="Basket"> Basket </label></p>
-                        <p><label> <input type="checkbox" name="extras" value="Voetbal"> Voetbal </label></p>
-                    </fieldset>
-
-                    <p>
-                        <label>Geboorte datum
-                            <input type="datetime-local" name="pickup_time" required>
-                        </label>
-                    </p>
-
-                    <p>
-                        <label>Nationaliteit
-                            <select id="pickup_place" name="pickup_place">
-                                <option value="" selected="selected">Kies nationaliteit</option>
-                                <option value="Belg" >Belg</option>
-                                <option value="Frans" >Frans</option>
-                                <option value="Nederlands" >Nederlands</option>
-                            </select>
-                        </label> 
-                    </p>
-
-
-                    <p>
-                        <label>Opmerkingen
-                            <textarea name="opmerkingen" maxlength="500"></textarea>
-                        </label>
-                    </p>
-
-                    <p><button>Doorsturen</button></p>
-
+                    </div>
+                    <div class="rij">
+                        <button id="submit">Doorsturen</button>
+                    </div>
                 </form>
             </section>
-
             <section>
+
                 <h1>Video's</h1>
                 <iframe  id="video" width="950" height="700" src="https://www.youtube.com/embed/UKpdmFbcRIs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
             </section>
             <section>
-                <h1>Maps</h1>
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0359164957254!2d4.354321515475035!3d50.84901916644687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3821c965813%3A0x2835bda3e91c6b38!2sHogeschool-Universiteit+Brussel!5e0!3m2!1sen!2sbe!4v1539852063314" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
             </section>
         </article>
     </body>
